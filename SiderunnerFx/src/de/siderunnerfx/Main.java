@@ -3,19 +3,22 @@ package de.siderunnerfx;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 
 
 public class Main extends Application {
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("view\\LevelEditor.fxml"));
-			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("view/LevelDesigner.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+			
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
