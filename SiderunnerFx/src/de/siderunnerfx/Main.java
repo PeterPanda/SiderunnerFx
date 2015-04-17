@@ -1,5 +1,4 @@
 package de.siderunnerfx;
-package de.siderunnerfx.view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
