@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="240.0" prefWidth="491.0">
+         <children>
+            <Canvas height="240.0" layoutX="173.0" width="318.0" />
+            <VBox layoutY="71.0" prefHeight="169.0" prefWidth="164.0" />
+            <Button layoutX="3.0" layoutY="25.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
